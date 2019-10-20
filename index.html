@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <title>Zgadnij liczbę !!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Prosta gra w której gracz ma za zadanie zgadnąć liczbe wylosowaną przez komputer." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS. -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main class="game-box">
+        <!-- Title header. -->
+        <h2 class="game-box__title">ODGADNIJ LICZBĘ</h2>
+
+        <div class="game-box__form">
+            <!-- Input to get number from user. -->
+            <label><input class="form__input" type="number" placeholder="Wpisz liczbę" /></label>
+
+            <!-- Buttons to clear and check  input value. -->
+            <button class="form__btn" name="clear-button"></button>
+            <button class="form__btn" name="check-button"></button>
+        </div>
+
+        <!-- Place for output messages. -->
+        <p class="game-box__output">Moja liczba jest większa !</p>
+    </main>
+
+    <!-- JS. -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

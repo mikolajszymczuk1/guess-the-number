@@ -1,0 +1,89 @@
+@import "colors";
+@import "mixins";
+
+/* css reset. */
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+/* Fonts setup. */
+@font-face {
+    font-family: 'source_code_pro';
+    src: url("../fonts/sourcecodepro-regular-webfont.woff2") format("woff2"),
+         url("../fonts/sourcecodepro-regular-webfont.woff") format("woff");
+    font-display: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source_code_probold";
+    src: url("../fonts/sourcecodepro-bold-webfont.woff2") format("woff2"),
+         url("../fonts/sourcecodepro-bold-webfont.woff") format("woff");
+    font-display: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General styles. */
+body {
+    @include size(100%, 100vh);
+    min-height: 440px;
+
+    background-image: linear-gradient(to bottom, $blue2, $uglyGreen);
+    background-repeat: no-repeat;
+
+    font-family: source_code_pro, monospace;
+    font-size: 16px;
+}
+
+/* Styles for game elements. */
+.game-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+
+    top: 70px;
+    left: 50%;
+    @include size(90%, 350px);
+
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: solid 5px $blue1;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(black, 0.5),
+                inset 2px 2px 4px rgba(black, 0.5);
+}
+
+.game-box__title {
+    margin-top: 20px;
+    width: 50%;
+
+    color: $blue1;
+
+    font-family: source_code_probold, monospace;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(black, 0.5);
+    letter-spacing: 3px;
+}
+
+.game-box__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+
+}
+
+.form__btn {
+
+}
+
+.game-box__output {
+
+}

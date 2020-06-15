@@ -1,0 +1,20 @@
+/* Fonts setup. */
+@font-face {
+    font-family: 'source_sans_probold';
+    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+        url('../fonts/SourceSansPro-Bold.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Bold.woff') format('woff'),
+        url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+        url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+        url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "guess-the-number",
+  "version": "1.0.0",
+  "description": "Simple JS game where user must guess computer's random number",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html --port 3000",
+    "clean": "rm -r dist/*",
+    "build:parcel": "parcel build index.html --public-url ./",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikolajszymczuk1/guess-the-number.git"
+  },
+  "author": "Mikołaj Szymczuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikolajszymczuk1/guess-the-number/issues"
+  },
+  "homepage": "https://github.com/mikolajszymczuk1/guess-the-number#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "jest": "^26.0.1",
+    "sass": "^1.26.8"
+  }
+}

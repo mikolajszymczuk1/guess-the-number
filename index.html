@@ -3,20 +3,17 @@
 <html lang="pl">
 
 <head>
-    <title>Zgadnij liczbę !!</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
     <meta name="description" content="Prosta gra w której gracz ma za zadanie zgadnąć liczbe wylosowaną przez komputer." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zgadnij liczbę !!</title>
 
     <!-- CSS. -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="sass/style.scss" />
 </head>
 
 <body>
-    <!-- Place for output messages. -->
-    <div class="game-box__output"></div>
-
     <!-- Box for all game. -->
     <main class="game-box">
         <!-- Title header. -->
@@ -39,6 +36,9 @@
         </div>
 
         <div class="game-box__try-counter">0</div>
+        
+        <!-- Place for output messages. -->
+        <div class="game-box__output">PODAJ LICZBĘ</div>
     </main>
 
     <!-- JS. -->

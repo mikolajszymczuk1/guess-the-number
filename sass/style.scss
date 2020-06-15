@@ -1,3 +1,4 @@
+@import "fonts";
 @import "colors";
 @import "mixins";
 
@@ -9,30 +10,13 @@
     box-sizing: border-box;
 }
 
-/* Fonts setup. */
-@font-face {
-    font-family: "source_sans_proregular";
-    src: url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"),
-         url("../fonts/sourcesanspro-regular-webfont.woff") format("woff");
-    font-display: auto;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "source_sans_probold";
-    src: url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),
-         url("../fonts/sourcesanspro-bold-webfont.woff") format("woff");
-    font-display: auto;
-    font-weight: normal;
-    font-style: normal;
+html,
+body {
+    min-height: 100%;
 }
 
 /* General styles. */
 body {
-    height: 100vh;
-    min-height: 480px;
-
     background-image: linear-gradient(to bottom, $blue2, $uglyGreen);
     background-repeat: no-repeat;
 
@@ -47,7 +31,7 @@ body {
     align-items: center;
     position: absolute;
 
-    top: 70px;
+    top: 50%;
     left: 50%;
     @include size(90%, 350px);
 
@@ -56,26 +40,40 @@ body {
     border-radius: 20px;
     box-shadow: 2px 2px 4px rgba(black, 0.5),
                 inset 2px 2px 4px rgba(black, 0.5);
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 390px) {
+    .game-box {
+        @include size(90%, 450px)
+    }
 }
 
 @media screen and (min-width: 390px) {
     .game-box {
-        @include size(80%, 400px);
+        @include size(80%, 500px);
     }
 }
 
 @media screen and (min-width: 665px) {
     .game-box {
-        top: 100px;
-
-        @include size(60%, 380px);
+        @include size(70%, 450px);
     }
 }
 
 @media screen and (min-width: 1200px) {
     .game-box {
         @include size(650px, 400px);
+    }
+}
+
+@media screen and (max-height: 524px) {
+    .game-box {
+        position: static;
+
+        margin: 40px auto;
+
+        transform: none;
     }
 }
 
@@ -269,8 +267,6 @@ body {
     margin-top: 20px;
 
     color: $blue4;
-    transform: translateY(-100px);
-    transition: transform 200ms ease-in;
 
     font-weight: bold;
     text-align: center;
@@ -288,10 +284,6 @@ body {
     .game-box__output {
         margin-top: 30px;
     }
-}
-
-.game-box__output--active {
-    transform: translateY(0);
 }
 
 .game-box__try-counter {

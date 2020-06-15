@@ -12,7 +12,9 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["html"]
+    "coverageReporters": [
+      "html"
+    ]
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "babel-jest": "^26.0.1",
     "cssnano": "^4.1.10",
     "jest": "^26.0.1",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.26.8"
   }
 }

@@ -10,6 +10,10 @@
     "build:parcel": "parcel build index.html --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikolajszymczuk1/guess-the-number.git"
@@ -21,7 +25,11 @@
   },
   "homepage": "https://github.com/mikolajszymczuk1/guess-the-number#readme",
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
     "autoprefixer": "^9.8.0",
+    "babel-jest": "^26.0.1",
+    "cssnano": "^4.1.10",
     "jest": "^26.0.1",
     "sass": "^1.26.8"
   }
